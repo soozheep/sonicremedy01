@@ -1,33 +1,31 @@
 # Assets for sonicremedy01
 
-Upload the following files into the correct folders. Use exact filenames so the player and cards work.
+Upload the following files using **exact filenames** (matching how they are named in your Google Drive / existing song repos).
 
-## covers/ (cover art images — PNG preferred, square or near-square)
+## covers/  (use the original names from Drive)
 
-- 01-pour-it-out.png          (from pouritout Cover.PNG)
-- 02-breathe-like-it-matters.png
-- 03-whine-and-shine.png
-- 04-mirror-mirror.png
-- 05-their-mess-not-yours.png
-- 06-the-greater-you.png
-- 07-free-yourself.png
-- 08-fools-gold.png
-- 09-pick-your-battles.png
-- 10-i-am-my-own-energy-source.png
+- Cover.PNG                  ← Pour It Out
+- blim-cover.PNG             ← Breathe Like It Matters
+- ws-cover.PNG               ← Whine & Shine
+- mm-cover.PNG               ← Mirror Mirror
+- tmny-cover.PNG             ← Their Mess Not Yours
+- tgy-cover.PNG              ← The Greater You
+- fy-cover.jpg               ← Free Yourself
+- fg-cover.png               ← Fool's Gold
+- pyb-cover.PNG              ← Pick Your Battles
+- iamoes-cover.PNG           ← I Am My Own Energy Source
 
-## tracks/ (mastered MP3s)
+## tracks/  (rename your mastered MP3s to this short form)
 
-- 01-pour-it-out.mp3
-- 02-breathe-like-it-matters.mp3
-- 03-whine-and-shine.mp3
-- 04-mirror-mirror.mp3
-- 05-their-mess-not-yours.mp3
-- 06-the-greater-you.mp3
-- 07-free-yourself.mp3
-- 08-fools-gold.mp3
-- 09-pick-your-battles.mp3
-- 10-i-am-my-own-energy-source.mp3
+- af1-01.mp3                 ← Pour It Out
+- af1-02.mp3                 ← Breathe Like It Matters
+- af1-03.mp3                 ← Whine & Shine
+- af1-04.mp3                 ← Mirror Mirror
+- af1-05.mp3                 ← Their Mess Not Yours
+- af1-06.mp3                 ← The Greater You
+- af1-07.mp3                 ← Free Yourself
+- af1-08.mp3                 ← Fool's Gold
+- af1-09.mp3                 ← Pick Your Battles
+- af1-10.mp3                 ← I Am My Own Energy Source
 
-You can copy the Cover / mastered files from the individual song GitHub repos or your Google Drive and rename them to the above.
-
-After uploading, the playlist player and Explore cards will display correctly.
+After these files are in the folders the playlist player and Explore cards will work correctly.

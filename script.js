@@ -1,0 +1,379 @@
+const SITE_URL = 'https://sonicremedy01.vercel.app';
+
+const PLAYLIST = [
+  {
+    num: 1,
+    title: 'Pour It Out',
+    full: 'Pour It Out – Remedy 01 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-01.PNG',
+    track: 'assets/tracks/af1-01.mp3',
+    page: 'https://pouritout.vercel.app',
+    spotify: 'https://open.spotify.com/track/6DncIdUcX9BwMK7GnBXHMI',
+    apple: 'https://music.apple.com/za/song/pour-it-out/1852152805',
+    amazon: 'https://music.amazon.com.au/tracks/B0G15FWBV1'
+  },
+  {
+    num: 2,
+    title: 'Breathe Like It Matters',
+    full: 'Breathe Like It Matters – Remedy 02 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-02.PNG',
+    track: 'assets/tracks/af1-02.mp3',
+    page: 'https://breathelikeitmatters.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 3,
+    title: 'Whine & Shine',
+    full: 'Whine & Shine – Remedy 03 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-03.PNG',
+    track: 'assets/tracks/af1-03.mp3',
+    page: 'https://whineandshine.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 4,
+    title: 'Mirror Mirror',
+    full: 'Mirror Mirror – Remedy 04 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-04.PNG',
+    track: 'assets/tracks/af1-04.mp3',
+    page: 'https://mirror-mirror-soozhee.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 5,
+    title: 'Their Mess Not Yours',
+    full: 'Their Mess Not Yours – Remedy 05 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-05.PNG',
+    track: 'assets/tracks/af1-05.mp3',
+    page: 'https://theirmessnotyours.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 6,
+    title: 'The Greater You',
+    full: 'The Greater You – Remedy 06 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-06.PNG',
+    track: 'assets/tracks/af1-06.mp3',
+    page: 'https://thegreateryou.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 7,
+    title: 'Free Yourself',
+    full: 'Free Yourself – Remedy 07 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-07.jpg',
+    track: 'assets/tracks/af1-07.mp3',
+    page: 'https://freeyourself.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 8,
+    title: "Fool's Gold",
+    full: "Fool's Gold – Remedy 08 – No.88 Emotional Detox",
+    cover: 'assets/covers/af-cover-08.png',
+    track: 'assets/tracks/af1-08.mp3',
+    page: 'https://foolsgold.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 9,
+    title: 'Pick Your Battles',
+    full: 'Pick Your Battles – Remedy 09 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-09.PNG',
+    track: 'assets/tracks/af1-09.mp3',
+    page: 'https://pickyourbattles.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  },
+  {
+    num: 10,
+    title: 'I Am My Own Energy Source',
+    full: 'I Am My Own Energy Source – Remedy 10 – No.88 Emotional Detox',
+    cover: 'assets/covers/af-cover-10.PNG',
+    track: 'assets/tracks/af1-10.mp3',
+    page: 'https://iammyownenergysource.vercel.app',
+    spotify: 'https://open.spotify.com/artist/4RReG7ft4gOWl2pNr5F8sF',
+    apple: 'https://music.apple.com/au/artist/soozhee/1569245776',
+    amazon: 'https://amazon.com/music/player/artists/B0967ZGMRT/soozhee'
+  }
+];
+
+let currentIndex = 0;
+let isPlaying = false;
+
+const audio = new Audio();
+audio.preload = 'metadata';
+
+function $(id) { return document.getElementById(id); }
+
+function formatTime(s) {
+  if (!isFinite(s)) return '0:00';
+  const m = Math.floor(s / 60);
+  const sec = Math.floor(s % 60);
+  return m + ':' + (sec < 10 ? '0' : '') + sec;
+}
+
+function loadTrack(index, autoplay = false) {
+  currentIndex = index;
+  const t = PLAYLIST[index];
+  audio.src = t.track;
+  $('playerCover').src = t.cover;
+  $('playerCover').alt = t.title + ' cover art';
+  $('nowPlayingNum').textContent = 'Track ' + String(t.num).padStart(2, '0') + ' of 10';
+  $('nowPlayingTitle').textContent = t.title;
+  document.querySelectorAll('.playlist-item').forEach((el, i) => {
+    el.classList.toggle('active', i === index);
+  });
+  if (autoplay) {
+    audio.play().then(() => {
+      isPlaying = true;
+      updatePlayIcon();
+    }).catch(() => {});
+  }
+}
+
+function updatePlayIcon() {
+  const playIcon = $('playIcon');
+  const pauseIcon = $('pauseIcon');
+  if (isPlaying) {
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+  } else {
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+  }
+}
+
+function togglePlay() {
+  if (isPlaying) {
+    audio.pause();
+    isPlaying = false;
+  } else {
+    audio.play().then(() => { isPlaying = true; }).catch(() => {});
+  }
+  updatePlayIcon();
+}
+
+function prevTrack() {
+  const next = (currentIndex - 1 + PLAYLIST.length) % PLAYLIST.length;
+  loadTrack(next, true);
+}
+
+function nextTrack() {
+  const next = (currentIndex + 1) % PLAYLIST.length;
+  loadTrack(next, true);
+}
+
+function buildPlaylist() {
+  const list = $('playlistList');
+  list.innerHTML = '';
+  PLAYLIST.forEach((t, i) => {
+    const item = document.createElement('div');
+    item.className = 'playlist-item' + (i === 0 ? ' active' : '');
+    item.innerHTML = `
+      <span class="num">${String(t.num).padStart(2, '0')}</span>
+      <div class="meta"><div class="title">${t.title}</div></div>
+      <span class="duration">–:––</span>
+    `;
+    item.addEventListener('click', () => loadTrack(i, true));
+    list.appendChild(item);
+  });
+}
+
+function buildSongCards() {
+  const grid = $('songsGrid');
+  grid.innerHTML = '';
+  PLAYLIST.forEach((t) => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.dataset.title = t.full;
+    card.dataset.text = t.title + ' by Soozhee | Sonic Remedy : Audiosensory Resonance | ' + t.page;
+    card.dataset.img = t.cover;
+    card.innerHTML = `
+      <div class="card-img-wrap">
+        <span class="card-num">${String(t.num).padStart(2, '0')}</span>
+        <a href="${t.cover}" data-page="${t.page}">
+          <img class="card-img" src="${t.cover}" alt="${t.title} cover art" loading="lazy" />
+        </a>
+      </div>
+      <div class="card-body">
+        <h3>${t.title}</h3>
+        <div class="remedy">Remedy ${String(t.num).padStart(2, '0')} · Emotional Detox</div>
+        <a class="song-link" href="${t.page}" target="_blank" rel="noopener">Open song page →</a>
+        <div class="stream-mini">
+          <a href="${t.spotify}" target="_blank" rel="noopener">Spotify</a>
+          <a href="${t.apple}" target="_blank" rel="noopener">Apple</a>
+          <a href="${t.amazon}" target="_blank" rel="noopener">Amazon</a>
+        </div>
+        <div class="share-bar">
+          <button class="share-btn primary" onclick="shareCard(this)">Share</button>
+          <a class="share-btn" href="#" onclick="shareTo('x', this); return false;">𝕏</a>
+          <a class="share-btn" href="#" onclick="shareTo('fb', this); return false;">Facebook</a>
+          <a class="share-btn" href="#" onclick="shareTo('li', this); return false;">LinkedIn</a>
+          <button class="share-btn" onclick="copyLink(this)">Copy</button>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function getCardData(el) {
+  const card = el.closest('.card');
+  return {
+    title: card.dataset.title,
+    text: card.dataset.text,
+    img: card.dataset.img
+  };
+}
+
+function showToast(msg) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+async function shareCard(btn) {
+  const data = getCardData(btn);
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: data.title, text: data.text, url: SITE_URL });
+      return;
+    } catch (e) {}
+  }
+  await navigator.clipboard.writeText(data.text + '\n\n' + SITE_URL);
+  showToast('Copied — paste anywhere');
+}
+
+function shareTo(platform, el) {
+  const data = getCardData(el);
+  const text = encodeURIComponent(data.text);
+  const url = encodeURIComponent(SITE_URL);
+  let link = '';
+  if (platform === 'x') link = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+  else if (platform === 'fb') link = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+  else if (platform === 'li') link = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+  else if (platform === 'email') link = `mailto:?subject=${encodeURIComponent(data.title)}&body=${text}%0A%0A${url}`;
+  if (link) window.open(link, '_blank', 'noopener,noreferrer,width=600,height=500');
+}
+
+async function copyLink(el) {
+  await navigator.clipboard.writeText(SITE_URL);
+  showToast('Link copied');
+}
+
+async function sharePage() {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: 'Audiosensory Formula 01: Emotional Detox — Sonic Remedy',
+        text: 'You don’t need to know what needs changing before you begin. Listen to the full playlist.',
+        url: SITE_URL
+      });
+      return;
+    } catch (e) {}
+  }
+  await navigator.clipboard.writeText(SITE_URL);
+  showToast('Link copied');
+}
+
+async function copyPageLink() {
+  await navigator.clipboard.writeText(SITE_URL);
+  showToast('Link copied');
+}
+
+function toggleMobileMenu() {
+  $('mobileNav').classList.toggle('open');
+}
+
+function closeMobileMenu() {
+  $('mobileNav').classList.remove('open');
+}
+
+/* Lightbox */
+function openLightbox(src, pageUrl) {
+  const lb = $('lightbox');
+  const img = $('lightboxImg');
+  img.src = src;
+  const actions = $('lightboxActions');
+  if (pageUrl) {
+    actions.innerHTML = `<a class="share-btn primary" href="${pageUrl}" target="_blank" rel="noopener">Open song page</a>
+      <button class="share-btn" onclick="closeLightbox()">Back to playlist</button>`;
+  } else {
+    actions.innerHTML = '';
+  }
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  $('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('click', function (e) {
+  const link = e.target.closest('.card-img-wrap a');
+  if (link) {
+    e.preventDefault();
+    openLightbox(link.getAttribute('href'), link.dataset.page);
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const lb = $('lightbox');
+  if (lb) {
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target.classList.contains('lightbox-close')) {
+        closeLightbox();
+      }
+    });
+  }
+
+  buildPlaylist();
+  buildSongCards();
+  loadTrack(0, false);
+
+  $('playBtn').addEventListener('click', togglePlay);
+  $('prevBtn').addEventListener('click', prevTrack);
+  $('nextBtn').addEventListener('click', nextTrack);
+
+  audio.addEventListener('loadedmetadata', () => {
+    $('duration').textContent = formatTime(audio.duration);
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    const pct = (audio.currentTime / audio.duration) * 100 || 0;
+    $('progressFill').style.width = pct + '%';
+    $('currentTime').textContent = formatTime(audio.currentTime);
+  });
+
+  audio.addEventListener('ended', () => {
+    nextTrack();
+  });
+
+  $('progressBar').addEventListener('click', (e) => {
+    const rect = $('progressBar').getBoundingClientRect();
+    const pct = (e.clientX - rect.left) / rect.width;
+    audio.currentTime = pct * audio.duration;
+  });
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeLightbox();
+});
